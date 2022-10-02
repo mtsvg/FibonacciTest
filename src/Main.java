@@ -1,10 +1,10 @@
 public class Main {
     static int recursiveFib(int n)
     {
-        // Base Case
+        // the base case for recursion to work
         if (n <= 1)
             return n;
-        // Recursive call
+
         return recursiveFib(n - 1)
                 + recursiveFib(n - 2);
     }
@@ -15,13 +15,12 @@ public class Main {
 
         int counter = 0;
 
-        // Iterate till counter is N
         while (counter < n) {
 
             // Print the number
             System.out.print(num1 + " ");
 
-            // Swap
+            // updates the number variables and the counter
             int num3 = num2 + num1;
             num1 = num2;
             num2 = num3;
