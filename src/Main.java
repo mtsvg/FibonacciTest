@@ -1,6 +1,6 @@
+
 public class Main {
-    static int recursiveFib(int n)
-    {
+    static int recursiveFib(int n) {
         // the base case for recursion to work
         if (n <= 1)
             return n;
@@ -9,8 +9,7 @@ public class Main {
                 + recursiveFib(n - 2);
     }
 
-    static void iterativeFib(int n)
-    {
+    static void iterativeFib(int n) {
         int num1 = 0, num2 = 1;
 
         int counter = 0;
@@ -27,7 +26,6 @@ public class Main {
             counter = counter + 1;
         }
     }
-
 
     public static void main(String[] args) {
         // amount of numbers in the sequence
@@ -47,7 +45,7 @@ public class Main {
         long endTime = System.nanoTime();
         //calculate time it took to do recursive function
         long totalTime = endTime - startTime;
-        System.out.println("Recursive: " + totalTime);
+        System.out.println("Recursive: " + totalTime + " nanoseconds.");
 
 
 
@@ -60,7 +58,7 @@ public class Main {
         //calculate time iterative function took
         totalTime = endTime - startTime;
         System.out.println();
-        System.out.println("Iterative: " + totalTime);
+        System.out.println("Iterative: " + totalTime + " nanoseconds.");
 
     }
 }
